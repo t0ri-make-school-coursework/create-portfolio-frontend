@@ -1,34 +1,55 @@
-.project-card-container {
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
+.project-card-container {
+  min-width: 25vw;
+  min-height: 65vh;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #747474;
+
+  background-color: #fff;
+  border: 1px solid #919191;
+
+  margin-bottom: 8vh;
 }
 
 .project-card-image {
-  width: 10vw;
-  height: 6vh;
+  max-width: 25vw;
+  max-height: 25vh;
 }
 
 .project-card-title {
+  padding: 1vw;
+  font-size: 32px;
 
+  font-weight: 700;
+
+  color: #0A3F96;
 }
 
 .project-card-desc {
+  padding: 1vw;
 
 }
 
 .project-card-class {
+  padding: 1vw;
 
 }
 
 .project-card-tech {
+  padding: 1vw;
 
 }
 
-.project-card-view-links {
-
+.project-card-view-links a {
+  color: #0A3F96;
+  text-decoration: none;
 }
 
 .project-card-live-link {
-
+  padding: 1vw;
 }
 
 .project-card-repo-link {

@@ -1,10 +1,10 @@
 #projects-container {
-  margin: 50px 15% 0 15%;
+  margin: 0 5vw 0 5vw;
 
-  width: 60vw;
+  width: 90vw;
   
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: baseline;
+  justify-content: space-around;
+  align-items: flex-start;
 }
