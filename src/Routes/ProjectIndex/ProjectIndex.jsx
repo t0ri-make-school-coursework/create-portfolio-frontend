@@ -29,7 +29,6 @@ export default class ProjectIndex extends React.Component {
         <h1>Projects</h1>
         
         <div id="projects-container">
-          project-index
           {this.renderProjectCards()}
         </div>
       </div>

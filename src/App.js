@@ -17,6 +17,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
+    document.title = 'Portfolio'
     fetch('/api/projects').then((res) => {
       return res.json()
     }).then((json) => {
