@@ -1,5 +1,8 @@
 html {
   background-color: #fbfbfb;
+
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
 }
 
 .App {
