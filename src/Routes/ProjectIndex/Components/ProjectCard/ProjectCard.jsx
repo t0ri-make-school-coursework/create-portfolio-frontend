@@ -6,7 +6,7 @@ export default class ProjectCard extends React.Component {
     const {
       image,
       title,
-      shortDesc,
+      shortdesc: shortDesc,
       class: madeFor,
       tech,
       live,

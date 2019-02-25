@@ -1,36 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700');
 
 .project-card-container {
   min-width: 25vw;
   min-height: 65vh;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: #747474;
 
   background-color: #fff;
-  border: 1px solid #919191;
+  border: 1px solid #b8b8b8;
 
   margin-bottom: 8vh;
 }
 
 .project-card-image {
-  max-width: 25vw;
-  max-height: 25vh;
+  width: 25vw;
+  height: 25vh;
 }
 
 .project-card-title {
-  padding: 1vw;
+  padding: 0 1vw 0 1vw;
   font-size: 32px;
 
+  font-family: 'Roboto', sans-serif !important;
   font-weight: 700;
 
   color: #0A3F96;
 }
 
 .project-card-desc {
-  padding: 1vw;
-
+  padding: 0 1vw 0 1vw;
+  color: black;
 }
 
 .project-card-class {
