@@ -24,7 +24,7 @@
   -moz-box-shadow:    0 0 15px #ccc;
   box-shadow:         0 0 15px #ccc;
 
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 .shadow {
