@@ -5,8 +5,10 @@
 }
 
 .project-card-container {
+  position: relative; 
+
   width: 25vw;
-  min-height: 70vh;
+  min-height: 65vh;
 
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
@@ -16,12 +18,16 @@
   border: 1px solid #b8b8b8;
 
   margin-bottom: 8vh;
-}
 
-.shadow {
   -webkit-box-shadow: 0 0 15px #ccc;
   -moz-box-shadow:    0 0 15px #ccc;
   box-shadow:         0 0 15px #ccc;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 0 20px #9e9d9a;
+  -moz-box-shadow:    0 0 20px #9e9d9a;
+  box-shadow:         0 0 20px #9e9d9a;
 }
 
 .project-card-image {
@@ -40,24 +46,38 @@
 }
 
 .project-card-desc {
-  padding: 0 1vw 0;
+  padding: 0 0 1vh 1vw;
   color: black;
 }
 
+.project-card-desc:after {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #e6714b;
+  margin: 2vh 1vw 0 0;
+}
+
 .project-card-class {
-  padding: 1vw;
+  padding-left: 1vw;
 }
 
 .project-card-tech {
-  padding: 1vw;
+  padding-left: 1vw;
 }
 
 .project-card-view-links {
-  width: 100%;
-  margin-bottom: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+
+  margin-bottom: 3vh; /* FIX */
+  position: absolute; /* FIX */
+  bottom: 15px; /* FIX */
 }
 
 .project-card-view-links a {
+  padding: 3vh 3vw 0 3vw;
   color: #0A3F96;
   text-decoration: none;
 }

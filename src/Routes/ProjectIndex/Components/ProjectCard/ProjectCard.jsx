@@ -13,7 +13,7 @@ export default class ProjectCard extends React.Component {
       repo
     } = this.props.project
     return (
-      <div className="project-card-container shadow">
+      <div className="project-card-container">
         <img src={image} alt={title} className="project-card-image"></img>
         <h1 className="project-card-title">{title}</h1>
         <p className="project-card-desc">{shortDesc}</p>
