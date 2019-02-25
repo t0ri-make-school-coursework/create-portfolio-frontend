@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
 #projects-container {
   margin: 0 5vw 0 5vw;
 
@@ -7,4 +9,10 @@
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+#project-index-h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 5vh 0;
+  left: 10vw;
 }

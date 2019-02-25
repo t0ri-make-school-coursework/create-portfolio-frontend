@@ -26,7 +26,7 @@ export default class ProjectIndex extends React.Component {
   render() {
     return (
       <div id="project-index-container">
-        <h1>Projects</h1>
+        <h1 id="project-index-h1">Projects</h1>
         
         <div id="projects-container">
           {this.renderProjectCards()}
