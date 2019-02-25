@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import Scrollbar from 'react-smooth-scrollbar';
 
 import './app.css'
 
@@ -36,30 +35,21 @@ export default class App extends React.Component {
   }
 
   render() {
-    return (
-      <div className="App">
-      <Scrollbar
-        damping={.32}
-        thumbMinSize={26}
-        syncCallbacks={false}
-        renderByPixels={true}
-        alwaysShowTracks={true}
-        continuousScrolling={true}
-      >            
-        <Router>
-          <div>
-            <Link to="/projects">Projects</Link>
-            <Link to="/">Home</Link>
-            <Route path="/projects" render={() => <ProjectIndex projects={this.projects} />} />
-            <Route path="/" exact component={Home} />
-            {/* <Route 
-              path="${match.url}/projectName"
-              render={() => <ProjectShow project="${projectName}" />}
-            /> */}
-          </div>
-        </Router>
-        </Scrollbar>
-      </div>
+    return (  
+        <div className="App">
+          <Router>
+            <div>
+              <Link to="/projects">Projects</Link>
+              <Link to="/">Home</Link>
+              <Route path="/projects" render={() => <ProjectIndex projects={this.projects} />} />
+              <Route path="/" exact component={Home} />
+              {/* <Route 
+                path="${match.url}/projectName"
+                render={() => <ProjectShow project="${projectName}" />}
+              /> */}
+            </div>
+          </Router>
+        </div>
     )
   }
 }

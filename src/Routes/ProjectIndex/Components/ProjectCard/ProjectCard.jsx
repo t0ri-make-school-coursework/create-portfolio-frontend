@@ -2,6 +2,21 @@ import React from 'react'
 import './projectcard.css'
 
 export default class ProjectCard extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      isFocused: false,
+    }
+  }
+
+  handleFocus() {
+    this.setState((prevState) => ({
+      isFocused:
+        !prevState.isFocused
+    }))
+  }
+
   render() {
     const {
       image,
@@ -12,8 +27,9 @@ export default class ProjectCard extends React.Component {
       live,
       repo
     } = this.props.project
+
     return (
-      <div className="project-card-container hvr-grow">
+      <div className="project-card-container hvr-grow" onClick={this.handleFocus}>
         <img src={image} alt={title} className="project-card-image"></img>
         <h1 className="project-card-title">{title}</h1>
         <p className="project-card-desc">{shortDesc}</p>
