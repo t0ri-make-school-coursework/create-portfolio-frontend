@@ -45,7 +45,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 
-  color: #0A3F96;
+  color: var(--color-one);
 }
 
 .project-card-desc {
@@ -56,7 +56,7 @@
 .project-card-desc:after {
   content: " ";
   display: block;
-  border-bottom: 1px solid #e6714b;
+  border-bottom: 1px solid var(--color-two);
   margin: 2vh 1vw 0 0;
 }
 
@@ -74,14 +74,14 @@
   justify-content: center;
   align-items: baseline;
 
-  margin-bottom: 3vh; /* FIX */
-  position: absolute; /* FIX */
-  bottom: 15px; /* FIX */
+  margin-bottom: 3vh;
+  position: absolute;
+  bottom: 15px;
 }
 
 .project-card-view-links a {
   padding: 3vh 3vw 0 3vw;
-  color: #0A3F96;
+  color: var(--color-one);
   text-decoration: none;
 }
 

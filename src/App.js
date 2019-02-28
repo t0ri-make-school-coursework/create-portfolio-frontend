@@ -44,8 +44,8 @@ export default class App extends React.Component {
               <Route path="/projects" render={() => <ProjectIndex projects={this.projects} />} />
               <Route path="/" exact component={Home} />
               {/* <Route 
-                path="${match.url}/projectName"
-                render={() => <ProjectShow project="${projectName}" />}
+                path={`${match.url}/${this.projects.title}`}
+                render={() => <ProjectShow project={projects} />}
               /> */}
             </div>
           </Router>

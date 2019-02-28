@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import './projectcard.css'
 
 export default class ProjectCard extends React.Component {
@@ -39,7 +40,7 @@ export default class ProjectCard extends React.Component {
     return (
       <div className={"project-card-container hvr-grow " + this.focusShadow()} onMouseEnter={this.handleFocus} onMouseLeave={this.handleFocus}>
         <img src={image} alt={title} className="project-card-image"></img>
-        <h1 className="project-card-title">{title}</h1>
+        <Link to={'projects/' + title}><h1 className="project-card-title">{title}</h1></Link>
         <p className="project-card-desc">{shortDesc}</p>
         <p className="project-card-class"><span className="bold">Made for</span> {madeFor}</p>
         <p className="project-card-tech"><span className="bold">Tech:</span> {tech}</p>

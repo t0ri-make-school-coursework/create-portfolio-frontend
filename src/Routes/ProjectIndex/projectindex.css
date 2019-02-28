@@ -14,5 +14,5 @@
 #project-index-h1 {
   margin: 5vh 0 5vh 10vw;
   font-family: 'Montserrat', sans-serif;
-  color: #e6714b;
+  color: var(--color-two);
 }
